@@ -1,0 +1,326 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.09 (build 687558)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+Filling queue with 20000 CIFAR images before starting to train. This will take a few minutes.
+2018-12-27 06:14:48.913603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:04:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:14:48.913650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0
+2018-12-27 06:14:49.273730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-27 06:14:49.273793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 
+2018-12-27 06:14:49.273802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N 
+2018-12-27 06:14:49.274151: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10172 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:04:00.0, compute capability: 7.5)
+2018-12-27 06:14:53.020920: step 0, loss = 4.67 (277.4 examples/sec; 0.462 sec/batch)
+benchmark-average:277
+benchmark-score:16620
+2018-12-27 06:14:53.280785: step 10, loss = 4.62 (4925.5 examples/sec; 0.026 sec/batch)
+benchmark-average:2601
+benchmark-score:156060
+2018-12-27 06:14:53.354952: step 20, loss = 4.53 (17260.6 examples/sec; 0.007 sec/batch)
+benchmark-average:7487
+benchmark-score:449220
+2018-12-27 06:14:53.427529: step 30, loss = 4.54 (17633.8 examples/sec; 0.007 sec/batch)
+benchmark-average:10024
+benchmark-score:601440
+2018-12-27 06:14:53.498330: step 40, loss = 4.36 (18079.4 examples/sec; 0.007 sec/batch)
+benchmark-average:11635
+benchmark-score:698100
+2018-12-27 06:14:53.571214: step 50, loss = 4.29 (17561.6 examples/sec; 0.007 sec/batch)
+benchmark-average:12623
+benchmark-score:757380
+2018-12-27 06:14:53.645401: step 60, loss = 4.20 (17253.8 examples/sec; 0.007 sec/batch)
+benchmark-average:13284
+benchmark-score:797040
+2018-12-27 06:14:53.721652: step 70, loss = 4.17 (16786.6 examples/sec; 0.008 sec/batch)
+benchmark-average:13722
+benchmark-score:823320
+2018-12-27 06:14:53.799764: step 80, loss = 4.11 (16387.3 examples/sec; 0.008 sec/batch)
+benchmark-average:14018
+benchmark-score:841080
+2018-12-27 06:14:53.875708: step 90, loss = 4.15 (16854.1 examples/sec; 0.008 sec/batch)
+benchmark-average:14302
+benchmark-score:858120
+2018-12-27 06:14:54.132353: step 100, loss = 4.12 (4987.5 examples/sec; 0.026 sec/batch)
+benchmark-average:13455
+benchmark-score:807300
+2018-12-27 06:14:54.211454: step 110, loss = 3.91 (16181.1 examples/sec; 0.008 sec/batch)
+benchmark-average:13682
+benchmark-score:820920
+2018-12-27 06:14:54.291786: step 120, loss = 3.94 (15934.4 examples/sec; 0.008 sec/batch)
+benchmark-average:13855
+benchmark-score:831300
+2018-12-27 06:14:54.373146: step 130, loss = 3.85 (15731.8 examples/sec; 0.008 sec/batch)
+benchmark-average:13989
+benchmark-score:839340
+2018-12-27 06:14:54.451107: step 140, loss = 3.95 (16418.4 examples/sec; 0.008 sec/batch)
+benchmark-average:14151
+benchmark-score:849060
+2018-12-27 06:14:54.526065: step 150, loss = 3.84 (17076.3 examples/sec; 0.007 sec/batch)
+benchmark-average:14334
+benchmark-score:860040
+2018-12-27 06:14:54.601675: step 160, loss = 3.95 (16929.2 examples/sec; 0.008 sec/batch)
+benchmark-average:14486
+benchmark-score:869160
+2018-12-27 06:14:54.679706: step 170, loss = 4.12 (16403.7 examples/sec; 0.008 sec/batch)
+benchmark-average:14593
+benchmark-score:875580
+2018-12-27 06:14:54.754243: step 180, loss = 3.89 (17173.3 examples/sec; 0.007 sec/batch)
+benchmark-average:14729
+benchmark-score:883740
+2018-12-27 06:14:54.830019: step 190, loss = 3.95 (16891.4 examples/sec; 0.008 sec/batch)
+benchmark-average:14837
+benchmark-score:890220
+2018-12-27 06:14:55.082275: step 200, loss = 3.92 (5074.2 examples/sec; 0.025 sec/batch)
+benchmark-average:14372
+benchmark-score:862320
+2018-12-27 06:14:55.158659: step 210, loss = 3.91 (16757.5 examples/sec; 0.008 sec/batch)
+benchmark-average:14480
+benchmark-score:868800
+2018-12-27 06:14:55.232815: step 220, loss = 3.73 (17260.8 examples/sec; 0.007 sec/batch)
+benchmark-average:14601
+benchmark-score:876060
+2018-12-27 06:14:55.310474: step 230, loss = 3.75 (16482.2 examples/sec; 0.008 sec/batch)
+benchmark-average:14680
+benchmark-score:880800
+2018-12-27 06:14:55.385033: step 240, loss = 3.66 (17167.7 examples/sec; 0.007 sec/batch)
+benchmark-average:14779
+benchmark-score:886740
+2018-12-27 06:14:55.463251: step 250, loss = 3.70 (16364.6 examples/sec; 0.008 sec/batch)
+benchmark-average:14840
+benchmark-score:890400
+2018-12-27 06:14:55.538486: step 260, loss = 3.77 (17013.2 examples/sec; 0.008 sec/batch)
+benchmark-average:14921
+benchmark-score:895260
+2018-12-27 06:14:55.614453: step 270, loss = 3.89 (16849.9 examples/sec; 0.008 sec/batch)
+benchmark-average:14989
+benchmark-score:899340
+2018-12-27 06:14:55.690685: step 280, loss = 3.73 (16790.7 examples/sec; 0.008 sec/batch)
+benchmark-average:15051
+benchmark-score:903060
+2018-12-27 06:14:55.766962: step 290, loss = 3.58 (16781.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15109
+benchmark-score:906540
+2018-12-27 06:14:56.018478: step 300, loss = 3.46 (5089.2 examples/sec; 0.025 sec/batch)
+benchmark-average:14786
+benchmark-score:887160
+2018-12-27 06:14:56.095775: step 310, loss = 3.45 (16558.5 examples/sec; 0.008 sec/batch)
+benchmark-average:14841
+benchmark-score:890460
+2018-12-27 06:14:56.175282: step 320, loss = 3.45 (16100.9 examples/sec; 0.008 sec/batch)
+benchmark-average:14879
+benchmark-score:892740
+2018-12-27 06:14:56.252438: step 330, loss = 3.84 (16588.0 examples/sec; 0.008 sec/batch)
+benchmark-average:14930
+benchmark-score:895800
+2018-12-27 06:14:56.329803: step 340, loss = 3.45 (16546.2 examples/sec; 0.008 sec/batch)
+benchmark-average:14976
+benchmark-score:898560
+2018-12-27 06:14:56.404712: step 350, loss = 3.42 (17086.0 examples/sec; 0.007 sec/batch)
+benchmark-average:15034
+benchmark-score:902040
+2018-12-27 06:14:56.481236: step 360, loss = 3.30 (16726.9 examples/sec; 0.008 sec/batch)
+benchmark-average:15080
+benchmark-score:904800
+2018-12-27 06:14:56.555382: step 370, loss = 3.36 (17263.2 examples/sec; 0.007 sec/batch)
+benchmark-average:15138
+benchmark-score:908280
+2018-12-27 06:14:56.630075: step 380, loss = 3.42 (17137.1 examples/sec; 0.007 sec/batch)
+benchmark-average:15189
+benchmark-score:911340
+2018-12-27 06:14:56.707248: step 390, loss = 3.20 (16586.3 examples/sec; 0.008 sec/batch)
+benchmark-average:15224
+benchmark-score:913440
+2018-12-27 06:14:56.956763: step 400, loss = 3.20 (5130.0 examples/sec; 0.025 sec/batch)
+benchmark-average:14978
+benchmark-score:898680
+2018-12-27 06:14:57.032296: step 410, loss = 3.44 (16945.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15024
+benchmark-score:901440
+2018-12-27 06:14:57.107429: step 420, loss = 3.46 (17036.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15071
+benchmark-score:904260
+2018-12-27 06:14:57.183583: step 430, loss = 3.24 (16807.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15111
+benchmark-score:906660
+2018-12-27 06:14:57.259237: step 440, loss = 3.34 (16919.3 examples/sec; 0.008 sec/batch)
+benchmark-average:15151
+benchmark-score:909060
+2018-12-27 06:14:57.334277: step 450, loss = 3.11 (17057.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15192
+benchmark-score:911520
+2018-12-27 06:14:57.411775: step 460, loss = 3.29 (16516.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15220
+benchmark-score:913200
+2018-12-27 06:14:57.487352: step 470, loss = 3.54 (16936.3 examples/sec; 0.008 sec/batch)
+benchmark-average:15256
+benchmark-score:915360
+2018-12-27 06:14:57.566087: step 480, loss = 3.21 (16257.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15277
+benchmark-score:916620
+2018-12-27 06:14:57.642675: step 490, loss = 3.17 (16712.9 examples/sec; 0.008 sec/batch)
+benchmark-average:15305
+benchmark-score:918300
+2018-12-27 06:14:57.884913: step 500, loss = 3.25 (5284.0 examples/sec; 0.024 sec/batch)
+benchmark-average:15109
+benchmark-score:906540
+2018-12-27 06:14:57.968217: step 510, loss = 3.22 (15365.6 examples/sec; 0.008 sec/batch)
+benchmark-average:15114
+benchmark-score:906840
+2018-12-27 06:14:58.043784: step 520, loss = 3.21 (16940.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15148
+benchmark-score:908880
+2018-12-27 06:14:58.121069: step 530, loss = 3.36 (16594.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15175
+benchmark-score:910500
+2018-12-27 06:14:58.200603: step 540, loss = 3.10 (16061.3 examples/sec; 0.008 sec/batch)
+benchmark-average:15191
+benchmark-score:911460
+2018-12-27 06:14:58.276174: step 550, loss = 3.09 (16937.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15222
+benchmark-score:913320
+2018-12-27 06:14:58.352024: step 560, loss = 3.00 (16875.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15251
+benchmark-score:915060
+2018-12-27 06:14:58.427935: step 570, loss = 2.95 (16861.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15279
+benchmark-score:916740
+2018-12-27 06:14:58.503963: step 580, loss = 3.08 (16836.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15305
+benchmark-score:918300
+2018-12-27 06:14:58.580571: step 590, loss = 3.02 (16708.1 examples/sec; 0.008 sec/batch)
+benchmark-average:15329
+benchmark-score:919740
+2018-12-27 06:14:58.821743: step 600, loss = 3.02 (5307.6 examples/sec; 0.024 sec/batch)
+benchmark-average:15164
+benchmark-score:909840
+2018-12-27 06:14:58.899240: step 610, loss = 2.97 (16515.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15186
+benchmark-score:911160
+2018-12-27 06:14:58.972841: step 620, loss = 2.85 (17391.2 examples/sec; 0.007 sec/batch)
+benchmark-average:15221
+benchmark-score:913260
+2018-12-27 06:14:59.047627: step 630, loss = 3.01 (17115.4 examples/sec; 0.007 sec/batch)
+benchmark-average:15251
+benchmark-score:915060
+2018-12-27 06:14:59.129210: step 640, loss = 3.10 (15689.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15258
+benchmark-score:915480
+2018-12-27 06:14:59.203688: step 650, loss = 2.90 (17186.2 examples/sec; 0.007 sec/batch)
+benchmark-average:15287
+benchmark-score:917220
+2018-12-27 06:14:59.284242: step 660, loss = 3.01 (15894.6 examples/sec; 0.008 sec/batch)
+benchmark-average:15296
+benchmark-score:917760
+2018-12-27 06:14:59.364028: step 670, loss = 3.25 (16038.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15307
+benchmark-score:918420
+2018-12-27 06:14:59.438668: step 680, loss = 3.07 (17149.0 examples/sec; 0.007 sec/batch)
+benchmark-average:15333
+benchmark-score:919980
+2018-12-27 06:14:59.513031: step 690, loss = 2.85 (17213.0 examples/sec; 0.007 sec/batch)
+benchmark-average:15360
+benchmark-score:921600
+2018-12-27 06:14:59.750407: step 700, loss = 2.88 (5392.3 examples/sec; 0.024 sec/batch)
+benchmark-average:15220
+benchmark-score:913200
+2018-12-27 06:14:59.826798: step 710, loss = 2.69 (16756.1 examples/sec; 0.008 sec/batch)
+benchmark-average:15241
+benchmark-score:914460
+2018-12-27 06:14:59.904077: step 720, loss = 2.70 (16563.3 examples/sec; 0.008 sec/batch)
+benchmark-average:15259
+benchmark-score:915540
+2018-12-27 06:14:59.980552: step 730, loss = 2.61 (16737.6 examples/sec; 0.008 sec/batch)
+benchmark-average:15279
+benchmark-score:916740
+2018-12-27 06:15:00.056395: step 740, loss = 2.85 (16876.9 examples/sec; 0.008 sec/batch)
+benchmark-average:15301
+benchmark-score:918060
+2018-12-27 06:15:00.133314: step 750, loss = 3.04 (16641.0 examples/sec; 0.008 sec/batch)
+benchmark-average:15318
+benchmark-score:919080
+2018-12-27 06:15:00.206464: step 760, loss = 2.63 (17498.0 examples/sec; 0.007 sec/batch)
+benchmark-average:15347
+benchmark-score:920820
+2018-12-27 06:15:00.284806: step 770, loss = 2.60 (16339.1 examples/sec; 0.008 sec/batch)
+benchmark-average:15359
+benchmark-score:921540
+2018-12-27 06:15:00.359506: step 780, loss = 2.82 (17134.9 examples/sec; 0.007 sec/batch)
+benchmark-average:15382
+benchmark-score:922920
+2018-12-27 06:15:00.434504: step 790, loss = 2.71 (17067.0 examples/sec; 0.007 sec/batch)
+benchmark-average:15403
+benchmark-score:924180
+2018-12-27 06:15:00.672618: step 800, loss = 2.73 (5375.9 examples/sec; 0.024 sec/batch)
+benchmark-average:15279
+benchmark-score:916740
+2018-12-27 06:15:00.750567: step 810, loss = 2.62 (16417.9 examples/sec; 0.008 sec/batch)
+benchmark-average:15293
+benchmark-score:917580
+2018-12-27 06:15:00.829931: step 820, loss = 2.88 (16128.1 examples/sec; 0.008 sec/batch)
+benchmark-average:15303
+benchmark-score:918180
+2018-12-27 06:15:00.908484: step 830, loss = 2.56 (16294.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15315
+benchmark-score:918900
+2018-12-27 06:15:00.987404: step 840, loss = 2.61 (16219.0 examples/sec; 0.008 sec/batch)
+benchmark-average:15325
+benchmark-score:919500
+2018-12-27 06:15:01.066796: step 850, loss = 2.96 (16122.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15335
+benchmark-score:920100
+2018-12-27 06:15:01.146136: step 860, loss = 2.78 (16133.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15344
+benchmark-score:920640
+2018-12-27 06:15:01.221624: step 870, loss = 2.64 (16956.0 examples/sec; 0.008 sec/batch)
+benchmark-average:15362
+benchmark-score:921720
+2018-12-27 06:15:01.299189: step 880, loss = 2.44 (16502.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15375
+benchmark-score:922500
+2018-12-27 06:15:01.375816: step 890, loss = 2.63 (16704.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15390
+benchmark-score:923400
+2018-12-27 06:15:01.611602: step 900, loss = 2.58 (5428.8 examples/sec; 0.024 sec/batch)
+benchmark-average:15280
+benchmark-score:916800
+2018-12-27 06:15:01.691327: step 910, loss = 2.57 (16054.1 examples/sec; 0.008 sec/batch)
+benchmark-average:15289
+benchmark-score:917340
+2018-12-27 06:15:01.768503: step 920, loss = 2.53 (16585.6 examples/sec; 0.008 sec/batch)
+benchmark-average:15303
+benchmark-score:918180
+2018-12-27 06:15:01.847705: step 930, loss = 2.37 (16161.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15312
+benchmark-score:918720
+2018-12-27 06:15:01.923781: step 940, loss = 2.61 (16825.4 examples/sec; 0.008 sec/batch)
+benchmark-average:15328
+benchmark-score:919680
+2018-12-27 06:15:01.999455: step 950, loss = 2.42 (16914.5 examples/sec; 0.008 sec/batch)
+benchmark-average:15344
+benchmark-score:920640
+2018-12-27 06:15:02.073376: step 960, loss = 2.58 (17316.2 examples/sec; 0.007 sec/batch)
+benchmark-average:15364
+benchmark-score:921840
+2018-12-27 06:15:02.150466: step 970, loss = 2.47 (16603.7 examples/sec; 0.008 sec/batch)
+benchmark-average:15377
+benchmark-score:922620
+2018-12-27 06:15:02.226734: step 980, loss = 2.38 (16783.2 examples/sec; 0.008 sec/batch)
+benchmark-average:15391
+benchmark-score:923460
+2018-12-27 06:15:02.305497: step 990, loss = 2.53 (16250.8 examples/sec; 0.008 sec/batch)
+benchmark-average:15400
+benchmark-score:924000
+2018-12-27 06:15:02.553671: step 1000, loss = 2.33 (5157.7 examples/sec; 0.025 sec/batch)
+benchmark-average:15298
+benchmark-score:917880

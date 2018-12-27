@@ -1,0 +1,385 @@
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/distribution.py:265: ReparameterizationType.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/bernoulli.py:169: RegisterKL.__init__ (from tensorflow.python.ops.distributions.kullback_leibler) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+WARNING:tensorflow:From /root/cifar10/cifar10_input.py:158: string_input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(string_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/training/input.py:276: input_producer (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensor_slices(input_tensor).shuffle(tf.shape(input_tensor, out_type=tf.int64)[0]).repeat(num_epochs)`. If `shuffle=False`, omit the `.shuffle(...)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/training/input.py:188: limit_epochs (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.from_tensors(tensor).repeat(num_epochs)`.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/training/input.py:197: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /usr/local/lib/python3.5/dist-packages/tensorflow/python/training/input.py:197: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /root/cifar10/cifar10_input.py:79: FixedLengthRecordReader.__init__ (from tensorflow.python.ops.io_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.FixedLengthRecordDataset`.
+Filling queue with 20000 CIFAR images before starting to train. This will take a few minutes.
+WARNING:tensorflow:From /root/cifar10/cifar10_input.py:126: shuffle_batch (from tensorflow.python.training.input) is deprecated and will be removed in a future version.
+Instructions for updating:
+Queue-based input pipelines have been replaced by `tf.data`. Use `tf.data.Dataset.shuffle(min_after_dequeue).batch(batch_size)`.
+2018-12-27 07:23:41.410738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 0 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:23:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2018-12-27 07:23:41.410998: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 1 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:26:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2018-12-27 07:23:41.411210: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 2 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:63:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2018-12-27 07:23:41.411430: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 3 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:66:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2018-12-27 07:23:41.411549: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Adding visible gpu devices: 0, 1, 2, 3
+2018-12-27 07:23:41.411624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-27 07:23:41.411652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1057]      0 1 2 3 
+2018-12-27 07:23:41.411670: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 0:   N Y Y Y 
+2018-12-27 07:23:41.411686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 1:   Y N Y Y 
+2018-12-27 07:23:41.411703: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 2:   Y Y N Y 
+2018-12-27 07:23:41.411719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 3:   Y Y Y N 
+2018-12-27 07:23:41.411836: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15306 MB memory) -> physical GPU (device: 0, name: Device 6860, pci bus id: 0000:23:00.0)
+2018-12-27 07:23:41.439232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15306 MB memory) -> physical GPU (device: 1, name: Device 6860, pci bus id: 0000:26:00.0)
+2018-12-27 07:23:41.464569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15306 MB memory) -> physical GPU (device: 2, name: Device 6860, pci bus id: 0000:63:00.0)
+2018-12-27 07:23:41.489591: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15306 MB memory) -> physical GPU (device: 3, name: Device 6860, pci bus id: 0000:66:00.0)
+WARNING:tensorflow:From cifar10_multi_gpu_train.py:240: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+MIOpen(HIP): Warning [Db] Unable to create a directory: "/root//.config/miopen"
+MIOpen(HIP): Warning [Db] Unable to create a directory: "/root//.config/miopen"
+MIOpen(HIP): Warning [Db] Unable to create a directory: "/root//.config/miopen"
+2018-12-27 07:23:58.805079: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:23:58.926604: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:23:58.961059: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:23:59.090710: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:24:01.076055: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2018-12-27 07:24:01.177328: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2018-12-27 07:24:01.236319: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2018-12-27 07:24:01.341086: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2018-12-27 07:24:04.294312: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:24:04.436526: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:24:04.500198: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:24:04.601602: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2018-12-27 07:24:07.137391: step 0, loss = 4.68 (20.4 examples/sec; 6.276 sec/batch)
+benchmark-average:20
+benchmark-score:1200
+2018-12-27 07:24:07.960295: step 10, loss = 4.62 (20374.0 examples/sec; 0.006 sec/batch)
+benchmark-average:10197
+benchmark-score:611820
+2018-12-27 07:24:08.212394: step 20, loss = 4.46 (21020.4 examples/sec; 0.006 sec/batch)
+benchmark-average:13804
+benchmark-score:828240
+2018-12-27 07:24:08.451148: step 30, loss = 4.39 (22730.7 examples/sec; 0.006 sec/batch)
+benchmark-average:16036
+benchmark-score:962160
+2018-12-27 07:24:08.681382: step 40, loss = 4.32 (23084.3 examples/sec; 0.006 sec/batch)
+benchmark-average:17445
+benchmark-score:1046700
+2018-12-27 07:24:08.915466: step 50, loss = 4.30 (22111.9 examples/sec; 0.006 sec/batch)
+benchmark-average:18223
+benchmark-score:1093380
+2018-12-27 07:24:09.149406: step 60, loss = 4.22 (22338.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18811
+benchmark-score:1128660
+2018-12-27 07:24:09.378819: step 70, loss = 4.19 (22494.3 examples/sec; 0.006 sec/batch)
+benchmark-average:19271
+benchmark-score:1156260
+2018-12-27 07:24:09.613119: step 80, loss = 4.17 (23020.4 examples/sec; 0.006 sec/batch)
+benchmark-average:19688
+benchmark-score:1181280
+2018-12-27 07:24:09.849890: step 90, loss = 4.23 (19900.5 examples/sec; 0.006 sec/batch)
+benchmark-average:19709
+benchmark-score:1182540
+2018-12-27 07:24:10.080729: step 100, loss = 4.13 (20873.1 examples/sec; 0.006 sec/batch)
+benchmark-average:19815
+benchmark-score:1188900
+2018-12-27 07:24:10.478251: step 110, loss = 4.01 (21480.0 examples/sec; 0.006 sec/batch)
+benchmark-average:19954
+benchmark-score:1197240
+2018-12-27 07:24:10.708423: step 120, loss = 3.92 (21990.5 examples/sec; 0.006 sec/batch)
+benchmark-average:20110
+benchmark-score:1206600
+2018-12-27 07:24:10.937457: step 130, loss = 4.02 (22088.7 examples/sec; 0.006 sec/batch)
+benchmark-average:20251
+benchmark-score:1215060
+2018-12-27 07:24:11.169222: step 140, loss = 4.13 (22214.1 examples/sec; 0.006 sec/batch)
+benchmark-average:20382
+benchmark-score:1222920
+2018-12-27 07:24:11.406690: step 150, loss = 3.86 (22131.2 examples/sec; 0.006 sec/batch)
+benchmark-average:20492
+benchmark-score:1229520
+2018-12-27 07:24:11.638466: step 160, loss = 4.01 (23945.5 examples/sec; 0.005 sec/batch)
+benchmark-average:20695
+benchmark-score:1241700
+2018-12-27 07:24:11.868638: step 170, loss = 3.84 (22772.6 examples/sec; 0.006 sec/batch)
+benchmark-average:20810
+benchmark-score:1248600
+2018-12-27 07:24:12.096114: step 180, loss = 4.03 (23514.0 examples/sec; 0.005 sec/batch)
+benchmark-average:20952
+benchmark-score:1257120
+2018-12-27 07:24:12.330300: step 190, loss = 3.87 (21250.2 examples/sec; 0.006 sec/batch)
+benchmark-average:20967
+benchmark-score:1258020
+2018-12-27 07:24:12.563258: step 200, loss = 3.72 (23265.6 examples/sec; 0.006 sec/batch)
+benchmark-average:21077
+benchmark-score:1264620
+2018-12-27 07:24:12.958795: step 210, loss = 3.69 (23166.2 examples/sec; 0.006 sec/batch)
+benchmark-average:21172
+benchmark-score:1270320
+2018-12-27 07:24:13.191147: step 220, loss = 3.60 (21220.4 examples/sec; 0.006 sec/batch)
+benchmark-average:21174
+benchmark-score:1270440
+2018-12-27 07:24:13.420294: step 230, loss = 3.75 (22036.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21210
+benchmark-score:1272600
+2018-12-27 07:24:13.650274: step 240, loss = 3.67 (23144.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21287
+benchmark-score:1277220
+2018-12-27 07:24:13.880192: step 250, loss = 3.62 (22749.2 examples/sec; 0.006 sec/batch)
+benchmark-average:21343
+benchmark-score:1280580
+2018-12-27 07:24:14.110291: step 260, loss = 3.77 (22258.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21377
+benchmark-score:1282620
+2018-12-27 07:24:14.338439: step 270, loss = 3.99 (21636.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21386
+benchmark-score:1283160
+2018-12-27 07:24:14.570032: step 280, loss = 3.60 (19664.5 examples/sec; 0.007 sec/batch)
+benchmark-average:21327
+benchmark-score:1279620
+2018-12-27 07:24:14.803777: step 290, loss = 3.56 (22736.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21374
+benchmark-score:1282440
+2018-12-27 07:24:15.029715: step 300, loss = 3.51 (21721.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21385
+benchmark-score:1283100
+2018-12-27 07:24:15.422465: step 310, loss = 3.66 (22483.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21419
+benchmark-score:1285140
+2018-12-27 07:24:15.653558: step 320, loss = 3.42 (22094.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21440
+benchmark-score:1286400
+2018-12-27 07:24:15.885406: step 330, loss = 3.45 (21796.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21450
+benchmark-score:1287000
+2018-12-27 07:24:16.128395: step 340, loss = 3.31 (20489.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21423
+benchmark-score:1285380
+2018-12-27 07:24:16.375791: step 350, loss = 3.52 (20368.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21394
+benchmark-score:1283640
+2018-12-27 07:24:16.613595: step 360, loss = 3.34 (22116.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21413
+benchmark-score:1284780
+2018-12-27 07:24:16.847654: step 370, loss = 3.24 (21379.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21412
+benchmark-score:1284720
+2018-12-27 07:24:17.084862: step 380, loss = 3.42 (22033.2 examples/sec; 0.006 sec/batch)
+benchmark-average:21428
+benchmark-score:1285680
+2018-12-27 07:24:17.316960: step 390, loss = 3.34 (21235.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21423
+benchmark-score:1285380
+2018-12-27 07:24:17.551834: step 400, loss = 3.38 (21581.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21427
+benchmark-score:1285620
+2018-12-27 07:24:17.945643: step 410, loss = 3.38 (22447.5 examples/sec; 0.006 sec/batch)
+benchmark-average:21451
+benchmark-score:1287060
+2018-12-27 07:24:18.203270: step 420, loss = 3.29 (18253.9 examples/sec; 0.007 sec/batch)
+benchmark-average:21377
+benchmark-score:1282620
+2018-12-27 07:24:18.488249: step 430, loss = 3.41 (15381.6 examples/sec; 0.008 sec/batch)
+benchmark-average:21241
+benchmark-score:1274460
+2018-12-27 07:24:18.825407: step 440, loss = 3.20 (14312.9 examples/sec; 0.009 sec/batch)
+benchmark-average:21087
+benchmark-score:1265220
+2018-12-27 07:24:19.204773: step 450, loss = 3.14 (15458.6 examples/sec; 0.008 sec/batch)
+benchmark-average:20964
+benchmark-score:1257840
+2018-12-27 07:24:19.537219: step 460, loss = 3.09 (13961.8 examples/sec; 0.009 sec/batch)
+benchmark-average:20815
+benchmark-score:1248900
+2018-12-27 07:24:19.847339: step 470, loss = 2.98 (14341.0 examples/sec; 0.009 sec/batch)
+benchmark-average:20681
+benchmark-score:1240860
+2018-12-27 07:24:20.137295: step 480, loss = 3.00 (18634.1 examples/sec; 0.007 sec/batch)
+benchmark-average:20639
+benchmark-score:1238340
+2018-12-27 07:24:20.403271: step 490, loss = 3.18 (20210.8 examples/sec; 0.006 sec/batch)
+benchmark-average:20630
+benchmark-score:1237800
+2018-12-27 07:24:20.665020: step 500, loss = 3.09 (20412.0 examples/sec; 0.006 sec/batch)
+benchmark-average:20626
+benchmark-score:1237560
+2018-12-27 07:24:21.079367: step 510, loss = 3.17 (21384.8 examples/sec; 0.006 sec/batch)
+benchmark-average:20641
+benchmark-score:1238460
+2018-12-27 07:24:21.333732: step 520, loss = 3.08 (21354.2 examples/sec; 0.006 sec/batch)
+benchmark-average:20654
+benchmark-score:1239240
+2018-12-27 07:24:21.573614: step 530, loss = 3.11 (22410.0 examples/sec; 0.006 sec/batch)
+benchmark-average:20686
+benchmark-score:1241160
+2018-12-27 07:24:21.823662: step 540, loss = 3.18 (19986.8 examples/sec; 0.006 sec/batch)
+benchmark-average:20674
+benchmark-score:1240440
+2018-12-27 07:24:22.065711: step 550, loss = 2.92 (22448.4 examples/sec; 0.006 sec/batch)
+benchmark-average:20705
+benchmark-score:1242300
+2018-12-27 07:24:22.302888: step 560, loss = 3.19 (17844.2 examples/sec; 0.007 sec/batch)
+benchmark-average:20655
+benchmark-score:1239300
+2018-12-27 07:24:22.528549: step 570, loss = 2.90 (23496.5 examples/sec; 0.005 sec/batch)
+benchmark-average:20704
+benchmark-score:1242240
+2018-12-27 07:24:22.765092: step 580, loss = 2.92 (22672.4 examples/sec; 0.006 sec/batch)
+benchmark-average:20738
+benchmark-score:1244280
+2018-12-27 07:24:22.997218: step 590, loss = 2.86 (22496.9 examples/sec; 0.006 sec/batch)
+benchmark-average:20767
+benchmark-score:1246020
+2018-12-27 07:24:23.225536: step 600, loss = 2.96 (23501.4 examples/sec; 0.005 sec/batch)
+benchmark-average:20812
+benchmark-score:1248720
+2018-12-27 07:24:23.614906: step 610, loss = 2.77 (22234.6 examples/sec; 0.006 sec/batch)
+benchmark-average:20835
+benchmark-score:1250100
+2018-12-27 07:24:23.845755: step 620, loss = 3.00 (22751.7 examples/sec; 0.006 sec/batch)
+benchmark-average:20865
+benchmark-score:1251900
+2018-12-27 07:24:24.073923: step 630, loss = 2.76 (25728.5 examples/sec; 0.005 sec/batch)
+benchmark-average:20941
+benchmark-score:1256460
+2018-12-27 07:24:24.304015: step 640, loss = 3.10 (22087.8 examples/sec; 0.006 sec/batch)
+benchmark-average:20959
+benchmark-score:1257540
+2018-12-27 07:24:24.526981: step 650, loss = 2.72 (23505.2 examples/sec; 0.005 sec/batch)
+benchmark-average:20997
+benchmark-score:1259820
+2018-12-27 07:24:24.754866: step 660, loss = 3.10 (22302.2 examples/sec; 0.006 sec/batch)
+benchmark-average:21017
+benchmark-score:1261020
+2018-12-27 07:24:25.005875: step 670, loss = 2.70 (20312.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21006
+benchmark-score:1260360
+2018-12-27 07:24:25.276546: step 680, loss = 2.79 (18772.9 examples/sec; 0.007 sec/batch)
+benchmark-average:20974
+benchmark-score:1258440
+2018-12-27 07:24:25.544903: step 690, loss = 2.65 (20656.6 examples/sec; 0.006 sec/batch)
+benchmark-average:20969
+benchmark-score:1258140
+2018-12-27 07:24:25.800867: step 700, loss = 2.93 (20518.9 examples/sec; 0.006 sec/batch)
+benchmark-average:20963
+benchmark-score:1257780
+2018-12-27 07:24:26.194271: step 710, loss = 2.74 (21436.9 examples/sec; 0.006 sec/batch)
+benchmark-average:20970
+benchmark-score:1258200
+2018-12-27 07:24:26.439027: step 720, loss = 2.74 (21971.4 examples/sec; 0.006 sec/batch)
+benchmark-average:20983
+benchmark-score:1258980
+2018-12-27 07:24:26.675036: step 730, loss = 2.80 (20835.2 examples/sec; 0.006 sec/batch)
+benchmark-average:20981
+benchmark-score:1258860
+2018-12-27 07:24:26.909282: step 740, loss = 2.72 (20843.3 examples/sec; 0.006 sec/batch)
+benchmark-average:20980
+benchmark-score:1258800
+2018-12-27 07:24:27.154410: step 750, loss = 2.87 (16299.8 examples/sec; 0.008 sec/batch)
+benchmark-average:20918
+benchmark-score:1255080
+2018-12-27 07:24:27.407624: step 760, loss = 2.73 (18986.6 examples/sec; 0.007 sec/batch)
+benchmark-average:20893
+benchmark-score:1253580
+2018-12-27 07:24:27.667742: step 770, loss = 2.82 (19746.8 examples/sec; 0.006 sec/batch)
+benchmark-average:20878
+benchmark-score:1252680
+2018-12-27 07:24:27.909192: step 780, loss = 2.60 (22162.3 examples/sec; 0.006 sec/batch)
+benchmark-average:20894
+benchmark-score:1253640
+2018-12-27 07:24:28.170382: step 790, loss = 2.38 (19315.7 examples/sec; 0.007 sec/batch)
+benchmark-average:20875
+benchmark-score:1252500
+2018-12-27 07:24:28.414403: step 800, loss = 2.58 (19561.2 examples/sec; 0.007 sec/batch)
+benchmark-average:20858
+benchmark-score:1251480
+2018-12-27 07:24:28.804128: step 810, loss = 2.66 (22213.0 examples/sec; 0.006 sec/batch)
+benchmark-average:20875
+benchmark-score:1252500
+2018-12-27 07:24:29.039861: step 820, loss = 2.56 (24230.6 examples/sec; 0.005 sec/batch)
+benchmark-average:20915
+benchmark-score:1254900
+2018-12-27 07:24:29.277585: step 830, loss = 2.68 (23102.2 examples/sec; 0.006 sec/batch)
+benchmark-average:20941
+benchmark-score:1256460
+2018-12-27 07:24:29.519713: step 840, loss = 2.40 (23472.1 examples/sec; 0.005 sec/batch)
+benchmark-average:20971
+benchmark-score:1258260
+2018-12-27 07:24:29.757809: step 850, loss = 2.49 (22938.1 examples/sec; 0.006 sec/batch)
+benchmark-average:20994
+benchmark-score:1259640
+2018-12-27 07:24:29.987297: step 860, loss = 2.41 (22029.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21006
+benchmark-score:1260360
+2018-12-27 07:24:30.220421: step 870, loss = 2.54 (22436.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21022
+benchmark-score:1261320
+2018-12-27 07:24:30.449999: step 880, loss = 2.40 (21891.9 examples/sec; 0.006 sec/batch)
+benchmark-average:21032
+benchmark-score:1261920
+2018-12-27 07:24:30.681354: step 890, loss = 2.38 (22941.5 examples/sec; 0.006 sec/batch)
+benchmark-average:21053
+benchmark-score:1263180
+2018-12-27 07:24:30.909176: step 900, loss = 2.59 (22708.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21071
+benchmark-score:1264260
+2018-12-27 07:24:31.309108: step 910, loss = 2.31 (22599.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21088
+benchmark-score:1265280
+2018-12-27 07:24:31.556829: step 920, loss = 2.31 (20461.8 examples/sec; 0.006 sec/batch)
+benchmark-average:21081
+benchmark-score:1264860
+2018-12-27 07:24:31.797290: step 930, loss = 2.35 (21526.3 examples/sec; 0.006 sec/batch)
+benchmark-average:21086
+benchmark-score:1265160
+2018-12-27 07:24:32.046513: step 940, loss = 2.45 (21206.4 examples/sec; 0.006 sec/batch)
+benchmark-average:21087
+benchmark-score:1265220
+2018-12-27 07:24:32.314822: step 950, loss = 2.32 (20209.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21078
+benchmark-score:1264680
+2018-12-27 07:24:32.566814: step 960, loss = 2.34 (22646.1 examples/sec; 0.006 sec/batch)
+benchmark-average:21094
+benchmark-score:1265640
+2018-12-27 07:24:32.806967: step 970, loss = 2.33 (23585.0 examples/sec; 0.005 sec/batch)
+benchmark-average:21120
+benchmark-score:1267200
+2018-12-27 07:24:33.040219: step 980, loss = 2.35 (22943.0 examples/sec; 0.006 sec/batch)
+benchmark-average:21138
+benchmark-score:1268280
+2018-12-27 07:24:33.275759: step 990, loss = 2.18 (22124.6 examples/sec; 0.006 sec/batch)
+benchmark-average:21148
+benchmark-score:1268880

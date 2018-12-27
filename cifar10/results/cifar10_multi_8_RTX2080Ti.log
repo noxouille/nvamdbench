@@ -1,0 +1,365 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.09 (build 687558)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+Filling queue with 20000 CIFAR images before starting to train. This will take a few minutes.
+2018-12-27 06:17:26.118717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:04:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:26.459109: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:05:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:26.789096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 2 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:08:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:27.182330: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 3 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:09:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:27.618501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 4 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:83:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:27.945493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 5 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:84:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:28.269657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 6 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:87:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:28.591036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1405] Found device 7 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:88:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2018-12-27 06:17:28.602159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1484] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2018-12-27 06:17:31.222801: I tensorflow/core/common_runtime/gpu/gpu_device.cc:965] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-12-27 06:17:31.222843: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971]      0 1 2 3 4 5 6 7 
+2018-12-27 06:17:31.222851: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 0:   N N N N N N N N 
+2018-12-27 06:17:31.222857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 1:   N N N N N N N N 
+2018-12-27 06:17:31.222865: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 2:   N N N N N N N N 
+2018-12-27 06:17:31.222882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 3:   N N N N N N N N 
+2018-12-27 06:17:31.222900: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 4:   N N N N N N N N 
+2018-12-27 06:17:31.222908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 5:   N N N N N N N N 
+2018-12-27 06:17:31.222915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 6:   N N N N N N N N 
+2018-12-27 06:17:31.222922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:984] 7:   N N N N N N N N 
+2018-12-27 06:17:31.224724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10172 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:04:00.0, compute capability: 7.5)
+2018-12-27 06:17:31.363642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10172 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:05:00.0, compute capability: 7.5)
+2018-12-27 06:17:31.505114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10172 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:08:00.0, compute capability: 7.5)
+2018-12-27 06:17:31.643720: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10172 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:09:00.0, compute capability: 7.5)
+2018-12-27 06:17:31.782502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 10172 MB memory) -> physical GPU (device: 4, name: GeForce RTX 2080 Ti, pci bus id: 0000:83:00.0, compute capability: 7.5)
+2018-12-27 06:17:31.921317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 10172 MB memory) -> physical GPU (device: 5, name: GeForce RTX 2080 Ti, pci bus id: 0000:84:00.0, compute capability: 7.5)
+2018-12-27 06:17:32.059992: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 10172 MB memory) -> physical GPU (device: 6, name: GeForce RTX 2080 Ti, pci bus id: 0000:87:00.0, compute capability: 7.5)
+2018-12-27 06:17:32.200542: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1097] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 10172 MB memory) -> physical GPU (device: 7, name: GeForce RTX 2080 Ti, pci bus id: 0000:88:00.0, compute capability: 7.5)
+2018-12-27 06:17:34.647856: step 0, loss = 4.68 (63.0 examples/sec; 2.032 sec/batch)
+benchmark-average:62
+benchmark-score:3720
+2018-12-27 06:17:35.146941: step 10, loss = 4.63 (20564.3 examples/sec; 0.006 sec/batch)
+benchmark-average:10313
+benchmark-score:618780
+2018-12-27 06:17:35.209892: step 20, loss = 4.49 (22644.2 examples/sec; 0.006 sec/batch)
+benchmark-average:14423
+benchmark-score:865380
+2018-12-27 06:17:35.275785: step 30, loss = 4.38 (19737.2 examples/sec; 0.006 sec/batch)
+benchmark-average:15752
+benchmark-score:945120
+2018-12-27 06:17:35.340925: step 40, loss = 4.50 (19194.5 examples/sec; 0.007 sec/batch)
+benchmark-average:16440
+benchmark-score:986400
+2018-12-27 06:17:35.405202: step 50, loss = 4.35 (27483.9 examples/sec; 0.005 sec/batch)
+benchmark-average:18281
+benchmark-score:1096860
+2018-12-27 06:17:35.469445: step 60, loss = 4.20 (17007.9 examples/sec; 0.008 sec/batch)
+benchmark-average:18099
+benchmark-score:1085940
+2018-12-27 06:17:35.536668: step 70, loss = 4.21 (18799.3 examples/sec; 0.007 sec/batch)
+benchmark-average:18186
+benchmark-score:1091160
+2018-12-27 06:17:35.605054: step 80, loss = 4.60 (16551.7 examples/sec; 0.008 sec/batch)
+benchmark-average:18005
+benchmark-score:1080300
+2018-12-27 06:17:35.674399: step 90, loss = 3.99 (21536.9 examples/sec; 0.006 sec/batch)
+benchmark-average:18358
+benchmark-score:1101480
+2018-12-27 06:17:35.742888: step 100, loss = 4.22 (20710.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18572
+benchmark-score:1114320
+2018-12-27 06:17:36.002794: step 110, loss = 4.10 (16194.7 examples/sec; 0.008 sec/batch)
+benchmark-average:18373
+benchmark-score:1102380
+2018-12-27 06:17:36.073318: step 120, loss = 4.11 (19077.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18428
+benchmark-score:1105680
+2018-12-27 06:17:36.144658: step 130, loss = 4.20 (18216.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18413
+benchmark-score:1104780
+2018-12-27 06:17:36.215508: step 140, loss = 3.87 (15803.8 examples/sec; 0.008 sec/batch)
+benchmark-average:18239
+benchmark-score:1094340
+2018-12-27 06:17:36.284139: step 150, loss = 4.06 (21840.0 examples/sec; 0.006 sec/batch)
+benchmark-average:18464
+benchmark-score:1107840
+2018-12-27 06:17:36.356834: step 160, loss = 3.90 (15541.2 examples/sec; 0.008 sec/batch)
+benchmark-average:18292
+benchmark-score:1097520
+2018-12-27 06:17:36.424772: step 170, loss = 4.15 (23589.4 examples/sec; 0.005 sec/batch)
+benchmark-average:18586
+benchmark-score:1115160
+2018-12-27 06:17:36.498106: step 180, loss = 3.87 (17343.0 examples/sec; 0.007 sec/batch)
+benchmark-average:18521
+benchmark-score:1111260
+2018-12-27 06:17:36.568803: step 190, loss = 3.82 (16531.3 examples/sec; 0.008 sec/batch)
+benchmark-average:18421
+benchmark-score:1105260
+2018-12-27 06:17:36.634607: step 200, loss = 3.78 (21761.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18580
+benchmark-score:1114800
+2018-12-27 06:17:36.898575: step 210, loss = 3.92 (15372.5 examples/sec; 0.008 sec/batch)
+benchmark-average:18434
+benchmark-score:1106040
+2018-12-27 06:17:36.972337: step 220, loss = 3.65 (16667.3 examples/sec; 0.008 sec/batch)
+benchmark-average:18357
+benchmark-score:1101420
+2018-12-27 06:17:37.041039: step 230, loss = 3.65 (18978.8 examples/sec; 0.007 sec/batch)
+benchmark-average:18383
+benchmark-score:1102980
+2018-12-27 06:17:37.108695: step 240, loss = 3.60 (22346.3 examples/sec; 0.006 sec/batch)
+benchmark-average:18542
+benchmark-score:1112520
+2018-12-27 06:17:37.175451: step 250, loss = 3.82 (14727.8 examples/sec; 0.009 sec/batch)
+benchmark-average:18395
+benchmark-score:1103700
+2018-12-27 06:17:37.251841: step 260, loss = 3.63 (14775.6 examples/sec; 0.009 sec/batch)
+benchmark-average:18261
+benchmark-score:1095660
+2018-12-27 06:17:37.326431: step 270, loss = 3.59 (19373.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18301
+benchmark-score:1098060
+2018-12-27 06:17:37.399893: step 280, loss = 3.66 (17313.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18267
+benchmark-score:1096020
+2018-12-27 06:17:37.471312: step 290, loss = 3.57 (17069.0 examples/sec; 0.007 sec/batch)
+benchmark-average:18227
+benchmark-score:1093620
+2018-12-27 06:17:37.547663: step 300, loss = 3.62 (15403.4 examples/sec; 0.008 sec/batch)
+benchmark-average:18136
+benchmark-score:1088160
+2018-12-27 06:17:37.802258: step 310, loss = 4.05 (19509.8 examples/sec; 0.007 sec/batch)
+benchmark-average:18179
+benchmark-score:1090740
+2018-12-27 06:17:37.877407: step 320, loss = 3.43 (16311.3 examples/sec; 0.008 sec/batch)
+benchmark-average:18122
+benchmark-score:1087320
+2018-12-27 06:17:37.946685: step 330, loss = 3.59 (20846.1 examples/sec; 0.006 sec/batch)
+benchmark-average:18202
+benchmark-score:1092120
+2018-12-27 06:17:38.016070: step 340, loss = 3.48 (22048.1 examples/sec; 0.006 sec/batch)
+benchmark-average:18312
+benchmark-score:1098720
+2018-12-27 06:17:38.090555: step 350, loss = 3.39 (22269.4 examples/sec; 0.006 sec/batch)
+benchmark-average:18422
+benchmark-score:1105320
+2018-12-27 06:17:38.159822: step 360, loss = 3.40 (15975.9 examples/sec; 0.008 sec/batch)
+benchmark-average:18356
+benchmark-score:1101360
+2018-12-27 06:17:38.231394: step 370, loss = 3.69 (15475.4 examples/sec; 0.008 sec/batch)
+benchmark-average:18280
+benchmark-score:1096800
+2018-12-27 06:17:38.300655: step 380, loss = 3.38 (21685.6 examples/sec; 0.006 sec/batch)
+benchmark-average:18367
+benchmark-score:1102020
+2018-12-27 06:17:38.371613: step 390, loss = 3.44 (20045.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18409
+benchmark-score:1104540
+2018-12-27 06:17:38.444855: step 400, loss = 3.50 (20647.3 examples/sec; 0.006 sec/batch)
+benchmark-average:18464
+benchmark-score:1107840
+2018-12-27 06:17:38.703924: step 410, loss = 3.34 (21565.4 examples/sec; 0.006 sec/batch)
+benchmark-average:18538
+benchmark-score:1112280
+2018-12-27 06:17:38.770328: step 420, loss = 3.18 (21185.0 examples/sec; 0.006 sec/batch)
+benchmark-average:18599
+benchmark-score:1115940
+2018-12-27 06:17:38.838681: step 430, loss = 3.34 (15550.2 examples/sec; 0.008 sec/batch)
+benchmark-average:18530
+benchmark-score:1111800
+2018-12-27 06:17:38.907223: step 440, loss = 3.27 (21733.0 examples/sec; 0.006 sec/batch)
+benchmark-average:18601
+benchmark-score:1116060
+2018-12-27 06:17:38.976811: step 450, loss = 3.24 (19790.3 examples/sec; 0.006 sec/batch)
+benchmark-average:18627
+benchmark-score:1117620
+2018-12-27 06:17:39.048109: step 460, loss = 3.34 (17098.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18594
+benchmark-score:1115640
+2018-12-27 06:17:39.116504: step 470, loss = 3.57 (23573.9 examples/sec; 0.005 sec/batch)
+benchmark-average:18698
+benchmark-score:1121880
+2018-12-27 06:17:39.195034: step 480, loss = 3.29 (16508.9 examples/sec; 0.008 sec/batch)
+benchmark-average:18653
+benchmark-score:1119180
+2018-12-27 06:17:39.261955: step 490, loss = 3.20 (19038.7 examples/sec; 0.007 sec/batch)
+benchmark-average:18661
+benchmark-score:1119660
+2018-12-27 06:17:39.331037: step 500, loss = 3.25 (25854.6 examples/sec; 0.005 sec/batch)
+benchmark-average:18802
+benchmark-score:1128120
+2018-12-27 06:17:39.579769: step 510, loss = 3.25 (18392.3 examples/sec; 0.007 sec/batch)
+benchmark-average:18794
+benchmark-score:1127640
+2018-12-27 06:17:39.651323: step 520, loss = 3.08 (17280.5 examples/sec; 0.007 sec/batch)
+benchmark-average:18766
+benchmark-score:1125960
+2018-12-27 06:17:39.718254: step 530, loss = 3.20 (22870.9 examples/sec; 0.006 sec/batch)
+benchmark-average:18842
+benchmark-score:1130520
+2018-12-27 06:17:39.793624: step 540, loss = 3.22 (24414.3 examples/sec; 0.005 sec/batch)
+benchmark-average:18943
+benchmark-score:1136580
+2018-12-27 06:17:39.869459: step 550, loss = 3.05 (20674.3 examples/sec; 0.006 sec/batch)
+benchmark-average:18974
+benchmark-score:1138440
+2018-12-27 06:17:39.934381: step 560, loss = 2.86 (21888.1 examples/sec; 0.006 sec/batch)
+benchmark-average:19025
+benchmark-score:1141500
+2018-12-27 06:17:40.006218: step 570, loss = 3.08 (19415.3 examples/sec; 0.007 sec/batch)
+benchmark-average:19032
+benchmark-score:1141920
+2018-12-27 06:17:40.074687: step 580, loss = 2.92 (17684.1 examples/sec; 0.007 sec/batch)
+benchmark-average:19009
+benchmark-score:1140540
+2018-12-27 06:17:40.142430: step 590, loss = 3.26 (26073.1 examples/sec; 0.005 sec/batch)
+benchmark-average:19127
+benchmark-score:1147620
+2018-12-27 06:17:40.216349: step 600, loss = 3.05 (17945.9 examples/sec; 0.007 sec/batch)
+benchmark-average:19107
+benchmark-score:1146420
+2018-12-27 06:17:40.461502: step 610, loss = 3.06 (16329.7 examples/sec; 0.008 sec/batch)
+benchmark-average:19062
+benchmark-score:1143720
+2018-12-27 06:17:40.528795: step 620, loss = 2.92 (20855.8 examples/sec; 0.006 sec/batch)
+benchmark-average:19091
+benchmark-score:1145460
+2018-12-27 06:17:40.602277: step 630, loss = 3.00 (20984.6 examples/sec; 0.006 sec/batch)
+benchmark-average:19120
+benchmark-score:1147200
+2018-12-27 06:17:40.669017: step 640, loss = 2.71 (22140.8 examples/sec; 0.006 sec/batch)
+benchmark-average:19167
+benchmark-score:1150020
+2018-12-27 06:17:40.735800: step 650, loss = 2.77 (17204.1 examples/sec; 0.007 sec/batch)
+benchmark-average:19137
+benchmark-score:1148220
+2018-12-27 06:17:40.804697: step 660, loss = 3.08 (15567.3 examples/sec; 0.008 sec/batch)
+benchmark-average:19084
+benchmark-score:1145040
+2018-12-27 06:17:40.878646: step 670, loss = 2.91 (15614.9 examples/sec; 0.008 sec/batch)
+benchmark-average:19033
+benchmark-score:1141980
+2018-12-27 06:17:40.944679: step 680, loss = 2.84 (15179.6 examples/sec; 0.008 sec/batch)
+benchmark-average:18977
+benchmark-score:1138620
+2018-12-27 06:17:41.016724: step 690, loss = 2.90 (19099.6 examples/sec; 0.007 sec/batch)
+benchmark-average:18979
+benchmark-score:1138740
+2018-12-27 06:17:41.086846: step 700, loss = 2.88 (17727.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18961
+benchmark-score:1137660
+2018-12-27 06:17:41.330664: step 710, loss = 2.91 (15912.0 examples/sec; 0.008 sec/batch)
+benchmark-average:18919
+benchmark-score:1135140
+2018-12-27 06:17:41.403330: step 720, loss = 2.95 (16809.3 examples/sec; 0.008 sec/batch)
+benchmark-average:18890
+benchmark-score:1133400
+2018-12-27 06:17:41.472039: step 730, loss = 2.84 (18807.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18889
+benchmark-score:1133340
+2018-12-27 06:17:41.538845: step 740, loss = 2.65 (18714.8 examples/sec; 0.007 sec/batch)
+benchmark-average:18886
+benchmark-score:1133160
+2018-12-27 06:17:41.615609: step 750, loss = 2.59 (15683.8 examples/sec; 0.008 sec/batch)
+benchmark-average:18844
+benchmark-score:1130640
+2018-12-27 06:17:41.689230: step 760, loss = 2.64 (16343.1 examples/sec; 0.008 sec/batch)
+benchmark-average:18812
+benchmark-score:1128720
+2018-12-27 06:17:41.764305: step 770, loss = 2.75 (19574.5 examples/sec; 0.007 sec/batch)
+benchmark-average:18822
+benchmark-score:1129320
+2018-12-27 06:17:41.840467: step 780, loss = 2.79 (16361.0 examples/sec; 0.008 sec/batch)
+benchmark-average:18790
+benchmark-score:1127400
+2018-12-27 06:17:41.911767: step 790, loss = 2.83 (23241.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18846
+benchmark-score:1130760
+2018-12-27 06:17:41.983123: step 800, loss = 2.74 (22815.5 examples/sec; 0.006 sec/batch)
+benchmark-average:18895
+benchmark-score:1133700
+2018-12-27 06:17:42.230864: step 810, loss = 2.70 (16240.8 examples/sec; 0.008 sec/batch)
+benchmark-average:18863
+benchmark-score:1131780
+2018-12-27 06:17:42.302922: step 820, loss = 2.62 (20895.6 examples/sec; 0.006 sec/batch)
+benchmark-average:18887
+benchmark-score:1133220
+2018-12-27 06:17:42.372633: step 830, loss = 2.72 (22771.0 examples/sec; 0.006 sec/batch)
+benchmark-average:18933
+benchmark-score:1135980
+2018-12-27 06:17:42.445616: step 840, loss = 2.68 (19677.1 examples/sec; 0.007 sec/batch)
+benchmark-average:18942
+benchmark-score:1136520
+2018-12-27 06:17:42.517757: step 850, loss = 2.64 (19096.9 examples/sec; 0.007 sec/batch)
+benchmark-average:18944
+benchmark-score:1136640
+2018-12-27 06:17:42.583606: step 860, loss = 2.61 (21847.1 examples/sec; 0.006 sec/batch)
+benchmark-average:18977
+benchmark-score:1138620
+2018-12-27 06:17:42.652652: step 870, loss = 2.54 (15921.9 examples/sec; 0.008 sec/batch)
+benchmark-average:18943
+benchmark-score:1136580
+2018-12-27 06:17:42.728369: step 880, loss = 2.60 (18718.7 examples/sec; 0.007 sec/batch)
+benchmark-average:18940
+benchmark-score:1136400
+2018-12-27 06:17:42.797444: step 890, loss = 2.48 (22316.6 examples/sec; 0.006 sec/batch)
+benchmark-average:18978
+benchmark-score:1138680
+2018-12-27 06:17:42.869539: step 900, loss = 2.63 (15752.3 examples/sec; 0.008 sec/batch)
+benchmark-average:18942
+benchmark-score:1136520
+2018-12-27 06:17:43.124480: step 910, loss = 2.56 (21904.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18974
+benchmark-score:1138440
+2018-12-27 06:17:43.193850: step 920, loss = 2.42 (23461.6 examples/sec; 0.005 sec/batch)
+benchmark-average:19023
+benchmark-score:1141380
+2018-12-27 06:17:43.262537: step 930, loss = 2.73 (22335.2 examples/sec; 0.006 sec/batch)
+benchmark-average:19058
+benchmark-score:1143480
+2018-12-27 06:17:43.333781: step 940, loss = 2.40 (16957.9 examples/sec; 0.008 sec/batch)
+benchmark-average:19036
+benchmark-score:1142160
+2018-12-27 06:17:43.404822: step 950, loss = 2.47 (15670.0 examples/sec; 0.008 sec/batch)
+benchmark-average:19001
+benchmark-score:1140060
+2018-12-27 06:17:43.475556: step 960, loss = 2.65 (13859.4 examples/sec; 0.009 sec/batch)
+benchmark-average:18948
+benchmark-score:1136880
+2018-12-27 06:17:43.547132: step 970, loss = 2.44 (17672.4 examples/sec; 0.007 sec/batch)
+benchmark-average:18935
+benchmark-score:1136100
+2018-12-27 06:17:43.621015: step 980, loss = 2.44 (20279.2 examples/sec; 0.006 sec/batch)
+benchmark-average:18948
+benchmark-score:1136880
+2018-12-27 06:17:43.689839: step 990, loss = 2.43 (16487.1 examples/sec; 0.008 sec/batch)
+benchmark-average:18924
+benchmark-score:1135440

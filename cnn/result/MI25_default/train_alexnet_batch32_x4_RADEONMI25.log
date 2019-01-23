@@ -1,0 +1,132 @@
+WARNING: Logging before flag parsing goes to stderr.
+W0108 06:50:10.371279 140393797101312 deprecation.py:305] From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/distribution.py:265: ReparameterizationType.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+W0108 06:50:10.421395 140393797101312 deprecation.py:305] From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/bernoulli.py:169: RegisterKL.__init__ (from tensorflow.python.ops.distributions.kullback_leibler) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2019-01-08 06:50:12.901420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 0 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:23:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:50:12.901515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 1 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:26:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:50:12.901633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 2 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:63:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:50:12.901756: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 3 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:66:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:50:12.901892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Adding visible gpu devices: 0, 1, 2, 3
+2019-01-08 06:50:12.901931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-08 06:50:12.901945: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1057]      0 1 2 3 
+2019-01-08 06:50:12.901955: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 0:   N Y Y Y 
+2019-01-08 06:50:12.901986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 1:   Y N Y Y 
+2019-01-08 06:50:12.901999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 2:   Y Y N Y 
+2019-01-08 06:50:12.902026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 3:   Y Y Y N 
+2019-01-08 06:50:12.902091: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15306 MB memory) -> physical GPU (device: 0, name: Device 6860, pci bus id: 0000:23:00.0)
+2019-01-08 06:50:12.930064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15306 MB memory) -> physical GPU (device: 1, name: Device 6860, pci bus id: 0000:26:00.0)
+2019-01-08 06:50:12.959363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15306 MB memory) -> physical GPU (device: 2, name: Device 6860, pci bus id: 0000:63:00.0)
+2019-01-08 06:50:12.987211: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15306 MB memory) -> physical GPU (device: 3, name: Device 6860, pci bus id: 0000:66:00.0)
+TensorFlow:  1.12
+Model:       alexnet
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.TRAIN
+SingleSess:  False
+Batch size:  128 global
+             32.0 per device
+Num batches: 100
+Num epochs:  0.01
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+W0108 06:50:13.958142 140393797101312 deprecation.py:305] From /workspace/pwd/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2157: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2019-01-08 06:50:14.085477: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Adding visible gpu devices: 0, 1, 2, 3
+2019-01-08 06:50:14.085561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-08 06:50:14.085571: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1057]      0 1 2 3 
+2019-01-08 06:50:14.085596: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 0:   N Y Y Y 
+2019-01-08 06:50:14.085610: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 1:   Y N Y Y 
+2019-01-08 06:50:14.085643: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 2:   Y Y N Y 
+2019-01-08 06:50:14.085660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 3:   Y Y Y N 
+2019-01-08 06:50:14.085774: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15306 MB memory) -> physical GPU (device: 0, name: Device 6860, pci bus id: 0000:23:00.0)
+2019-01-08 06:50:14.086188: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15306 MB memory) -> physical GPU (device: 1, name: Device 6860, pci bus id: 0000:26:00.0)
+2019-01-08 06:50:14.086497: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15306 MB memory) -> physical GPU (device: 2, name: Device 6860, pci bus id: 0000:63:00.0)
+2019-01-08 06:50:14.086876: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15306 MB memory) -> physical GPU (device: 3, name: Device 6860, pci bus id: 0000:66:00.0)
+I0108 06:50:21.455410 140393797101312 session_manager.py:498] Running local_init_op.
+I0108 06:50:21.490442 140393797101312 session_manager.py:500] Done running local_init_op.
+Running warm up
+MIOpen(HIP): Warning [Db] Unable to create a directory: "/root//.config/miopen"
+2019-01-08 06:50:37.193675: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:37.334254: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:37.441398: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:37.529055: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:40.206369: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:40.220055: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:40.269027: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:40.283532: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:40.350056: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:40.364276: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:40.418277: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:40.433894: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:42.667097: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:42.685772: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:42.756345: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:42.771883: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:42.831658: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:42.851646: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:42.899246: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:42.952269: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:45.140046: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:45.218941: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:45.304833: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:45.367114: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:46.042715: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:46.118247: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:46.208745: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:46.297439: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:48.712463: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:48.804778: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:48.890263: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:48.974139: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:50:53.304992: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:53.454833: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:53.510357: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:50:53.644888: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 498.0 +/- 0.0 (jitter = 0.0)	7.200
+10	images/sec: 473.8 +/- 5.9 (jitter = 16.3)	7.196
+20	images/sec: 471.2 +/- 4.4 (jitter = 18.8)	7.200
+30	images/sec: 483.9 +/- 9.6 (jitter = 27.5)	7.199
+40	images/sec: 481.3 +/- 7.4 (jitter = 23.9)	7.199
+50	images/sec: 480.9 +/- 6.7 (jitter = 24.7)	7.199
+60	images/sec: 491.8 +/- 9.1 (jitter = 26.7)	7.200
+70	images/sec: 495.7 +/- 9.0 (jitter = 28.4)	7.199
+80	images/sec: 511.5 +/- 10.4 (jitter = 38.0)	7.198
+90	images/sec: 507.7 +/- 9.4 (jitter = 35.9)	7.200
+100	images/sec: 502.9 +/- 8.7 (jitter = 35.0)	7.198
+----------------------------------------------------------------
+total images/sec: 502.61
+----------------------------------------------------------------

@@ -1,0 +1,266 @@
+WARNING: Logging before flag parsing goes to stderr.
+W0108 06:15:34.495802 139761270748928 deprecation.py:305] From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/distribution.py:265: ReparameterizationType.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+W0108 06:15:34.545453 139761270748928 deprecation.py:305] From /usr/local/lib/python3.5/dist-packages/tensorflow/python/ops/distributions/bernoulli.py:169: RegisterKL.__init__ (from tensorflow.python.ops.distributions.kullback_leibler) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2019-01-08 06:15:36.970075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 0 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:23:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:15:36.970184: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 1 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:26:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:15:36.970313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 2 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:63:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:15:36.970453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1530] Found device 3 with properties: 
+name: Device 6860
+AMDGPU ISA: gfx900
+memoryClockRate (GHz) 1.5
+pciBusID 0000:66:00.0
+Total memory: 15.98GiB
+Free memory: 15.73GiB
+2019-01-08 06:15:36.970552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Adding visible gpu devices: 0, 1, 2, 3
+2019-01-08 06:15:36.970603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-08 06:15:36.970621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1057]      0 1 2 3 
+2019-01-08 06:15:36.970634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 0:   N Y Y Y 
+2019-01-08 06:15:36.970663: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 1:   Y N Y Y 
+2019-01-08 06:15:36.970676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 2:   Y Y N Y 
+2019-01-08 06:15:36.970688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 3:   Y Y Y N 
+2019-01-08 06:15:36.970768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15306 MB memory) -> physical GPU (device: 0, name: Device 6860, pci bus id: 0000:23:00.0)
+2019-01-08 06:15:36.998152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15306 MB memory) -> physical GPU (device: 1, name: Device 6860, pci bus id: 0000:26:00.0)
+2019-01-08 06:15:37.024067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15306 MB memory) -> physical GPU (device: 2, name: Device 6860, pci bus id: 0000:63:00.0)
+2019-01-08 06:15:37.052097: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15306 MB memory) -> physical GPU (device: 3, name: Device 6860, pci bus id: 0000:66:00.0)
+TensorFlow:  1.12
+Model:       inception3
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.TRAIN
+SingleSess:  False
+Batch size:  64 global
+             32.0 per device
+Num batches: 100
+Num epochs:  0.00
+Devices:     ['/gpu:0', '/gpu:1']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+W0108 06:15:44.636103 139761270748928 deprecation.py:305] From /workspace/pwd/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2157: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2019-01-08 06:15:45.815939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1641] Adding visible gpu devices: 0, 1, 2, 3
+2019-01-08 06:15:45.816200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1051] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-08 06:15:45.817087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1057]      0 1 2 3 
+2019-01-08 06:15:45.817261: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 0:   N Y Y Y 
+2019-01-08 06:15:45.817436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 1:   Y N Y Y 
+2019-01-08 06:15:45.818407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 2:   Y Y N Y 
+2019-01-08 06:15:45.818868: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1070] 3:   Y Y Y N 
+2019-01-08 06:15:45.818948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 15306 MB memory) -> physical GPU (device: 0, name: Device 6860, pci bus id: 0000:23:00.0)
+2019-01-08 06:15:45.823014: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 15306 MB memory) -> physical GPU (device: 1, name: Device 6860, pci bus id: 0000:26:00.0)
+2019-01-08 06:15:45.823347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 15306 MB memory) -> physical GPU (device: 2, name: Device 6860, pci bus id: 0000:63:00.0)
+2019-01-08 06:15:45.823666: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1189] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 15306 MB memory) -> physical GPU (device: 3, name: Device 6860, pci bus id: 0000:66:00.0)
+I0108 06:15:52.186156 139761270748928 session_manager.py:498] Running local_init_op.
+I0108 06:15:52.290072 139761270748928 session_manager.py:500] Done running local_init_op.
+Running warm up
+MIOpen(HIP): Warning [Db] Unable to create a directory: "/root//.config/miopen"
+2019-01-08 06:17:07.788674: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:07.832949: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:13.447134: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:13.497910: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:14.400418: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:14.469988: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:15.365425: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:15.433160: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:21.231400: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:21.288470: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:22.203061: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:22.238512: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:24.121863: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:24.183775: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:25.324482: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:25.399616: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:26.195546: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:26.281078: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:32.080940: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:32.195252: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:33.045782: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:33.161222: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:35.792017: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:35.913215: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:36.167117: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:36.288407: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:37.127184: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:37.251918: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:43.073960: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:43.228195: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:44.046089: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:44.185726: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:49.725548: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:49.872283: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:17:50.694309: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:50.822890: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:57.242590: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:17:57.329693: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:03.123393: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:03.188204: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:04.139809: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:04.196588: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:04.919491: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:04.981348: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:11.639703: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:11.672484: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:13.278361: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:13.344834: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:14.550150: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:14.601257: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:15.750177: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:15.811058: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:17.414928: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:17.528291: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:19.175801: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:19.302758: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:25.242469: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:25.387454: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:25.851359: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:26.004396: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:27.850055: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:27.855892: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:27.978420: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:27.984439: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:30.430041: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:30.567204: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:32.413430: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:32.560187: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:33.017910: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:33.024127: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:33.156470: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:33.162732: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:34.800798: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:34.954896: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:35.403709: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:35.561319: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:37.780204: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:37.928998: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:39.164495: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:39.169602: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:39.310794: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:39.315073: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:45.573943: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:45.703722: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:47.365350: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:47.516228: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:49.366322: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:49.498124: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:49.981245: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:50.093762: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:51.372349: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:51.476972: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:51.781338: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:51.905125: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:54.143407: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:54.283581: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:54.997903: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:55.001218: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:55.139497: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:18:55.142520: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:56.351357: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:18:56.480994: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:02.716124: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:02.816985: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:05.608617: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:05.728788: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:07.174053: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:07.273757: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:08.856227: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:08.992671: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:10.153514: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:10.283229: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:11.940323: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:12.078103: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:15.154802: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:15.323791: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:15.554775: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:15.741233: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:19.837130: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:19.940407: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:21.589459: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:21.716129: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:24.217719: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:24.337516: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:25.874060: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:26.002706: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:28.340534: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:28.445507: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:30.347331: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:30.473172: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:34.672534: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:34.761480: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:36.442364: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:36.564165: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:40.751114: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:40.850590: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:44.144975: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:44.280878: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:48.456348: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:48.577439: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:50.665781: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:50.746050: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:52.484844: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:52.547138: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:56.751404: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:56.831467: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:19:58.504146: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:19:58.625663: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:04.146926: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:04.270797: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:05.940005: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:06.062274: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:11.766284: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:11.902837: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:14.560179: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:14.678222: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:16.479884: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:16.609028: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:20.948689: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:21.089427: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:24.283909: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:24.303742: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:24.375498: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:24.421748: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:27.773849: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:27.896507: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:30.767479: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:30.882106: I tensorflow/core/kernels/conv_grad_input_ops.cc:1023] running auto-tune for Backward-Data
+2019-01-08 06:20:32.787416: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+2019-01-08 06:20:32.904702: I tensorflow/core/kernels/conv_grad_filter_ops.cc:975] running auto-tune for Backward-Filter
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 129.5 +/- 0.0 (jitter = 0.0)	7.356
+10	images/sec: 109.7 +/- 5.0 (jitter = 4.3)	7.388
+20	images/sec: 108.5 +/- 3.1 (jitter = 6.8)	7.397
+30	images/sec: 111.8 +/- 2.9 (jitter = 10.1)	7.416
+40	images/sec: 113.0 +/- 2.8 (jitter = 15.8)	7.383
+50	images/sec: 114.1 +/- 2.6 (jitter = 14.4)	7.375
+60	images/sec: 114.8 +/- 2.4 (jitter = 16.8)	7.423
+70	images/sec: 113.6 +/- 2.1 (jitter = 15.8)	7.353
+80	images/sec: 113.0 +/- 1.9 (jitter = 14.6)	7.365
+90	images/sec: 112.8 +/- 1.8 (jitter = 14.5)	7.433
+100	images/sec: 112.8 +/- 1.7 (jitter = 14.4)	7.442
+----------------------------------------------------------------
+total images/sec: 112.77
+----------------------------------------------------------------

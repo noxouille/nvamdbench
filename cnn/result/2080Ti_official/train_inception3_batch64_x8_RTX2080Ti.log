@@ -1,0 +1,124 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.12 (build 879479)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017-2018 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: MOFED driver for multi-node communication was not detected.
+      Multi-node communication performance may be reduced.
+
+2019-01-23 04:14:45.713213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1b:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:46.147256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1c:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:46.464250: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 2 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1d:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:46.795887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 3 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:1e:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:47.111315: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 4 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:3d:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:47.577989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 5 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:3f:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:47.973142: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 6 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:40:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:48.327346: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1432] Found device 7 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.545
+pciBusID: 0000:41:00.0
+totalMemory: 10.73GiB freeMemory: 10.53GiB
+2019-01-23 04:14:48.330006: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2019-01-23 04:14:51.726545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-23 04:14:51.726597: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 4 5 6 7 
+2019-01-23 04:14:51.726606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N N N N N N N N 
+2019-01-23 04:14:51.726612: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   N N N N N N N N 
+2019-01-23 04:14:51.726618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   N N N N N N N N 
+2019-01-23 04:14:51.726624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   N N N N N N N N 
+2019-01-23 04:14:51.726629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 4:   N N N N N N N N 
+2019-01-23 04:14:51.726635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 5:   N N N N N N N N 
+2019-01-23 04:14:51.726644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 6:   N N N N N N N N 
+2019-01-23 04:14:51.726650: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 7:   N N N N N N N N 
+2019-01-23 04:14:51.728280: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10170 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1b:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.728954: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10170 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1c:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.729615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10170 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:1d:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.730217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10170 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:1e:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.730803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 10170 MB memory) -> physical GPU (device: 4, name: GeForce RTX 2080 Ti, pci bus id: 0000:3d:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.731251: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 10170 MB memory) -> physical GPU (device: 5, name: GeForce RTX 2080 Ti, pci bus id: 0000:3f:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.732262: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 10170 MB memory) -> physical GPU (device: 6, name: GeForce RTX 2080 Ti, pci bus id: 0000:40:00.0, compute capability: 7.5)
+2019-01-23 04:14:51.733077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 10170 MB memory) -> physical GPU (device: 7, name: GeForce RTX 2080 Ti, pci bus id: 0000:41:00.0, compute capability: 7.5)
+TensorFlow:  1.12
+Model:       inception3
+Dataset:     imagenet (synthetic)
+Mode:        BenchmarkMode.TRAIN
+SingleSess:  False
+Batch size:  512 global
+             64.0 per device
+Num batches: 100
+Num epochs:  0.04
+Devices:     ['/gpu:0', '/gpu:1', '/gpu:2', '/gpu:3', '/gpu:4', '/gpu:5', '/gpu:6', '/gpu:7']
+Data format: NCHW
+Optimizer:   sgd
+Variables:   parameter_server
+==========
+Generating training model
+Initializing graph
+W0123 04:15:18.558017 139889825101568 tf_logging.py:125] From /workspace/pwd/benchmarks/scripts/tf_cnn_benchmarks/benchmark_cnn.py:2157: Supervisor.__init__ (from tensorflow.python.training.supervisor) is deprecated and will be removed in a future version.
+Instructions for updating:
+Please switch to tf.train.MonitoredTrainingSession
+2019-01-23 04:15:20.998944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1511] Adding visible gpu devices: 0, 1, 2, 3, 4, 5, 6, 7
+2019-01-23 04:15:21.024717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] Device interconnect StreamExecutor with strength 1 edge matrix:
+2019-01-23 04:15:21.025394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:988]      0 1 2 3 4 5 6 7 
+2019-01-23 04:15:21.025878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 0:   N N N N N N N N 
+2019-01-23 04:15:21.026932: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 1:   N N N N N N N N 
+2019-01-23 04:15:21.027279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 2:   N N N N N N N N 
+2019-01-23 04:15:21.028397: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 3:   N N N N N N N N 
+2019-01-23 04:15:21.029529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 4:   N N N N N N N N 
+2019-01-23 04:15:21.029906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 5:   N N N N N N N N 
+2019-01-23 04:15:21.030062: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 6:   N N N N N N N N 
+2019-01-23 04:15:21.031016: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1001] 7:   N N N N N N N N 
+2019-01-23 04:15:21.033968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10170 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:1b:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.038520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10170 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1c:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.043200: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10170 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:1d:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.046288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 10170 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:1e:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.046530: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:4 with 10170 MB memory) -> physical GPU (device: 4, name: GeForce RTX 2080 Ti, pci bus id: 0000:3d:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.046804: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:5 with 10170 MB memory) -> physical GPU (device: 5, name: GeForce RTX 2080 Ti, pci bus id: 0000:3f:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.047015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:6 with 10170 MB memory) -> physical GPU (device: 6, name: GeForce RTX 2080 Ti, pci bus id: 0000:40:00.0, compute capability: 7.5)
+2019-01-23 04:15:21.047496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1115] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:7 with 10170 MB memory) -> physical GPU (device: 7, name: GeForce RTX 2080 Ti, pci bus id: 0000:41:00.0, compute capability: 7.5)
+I0123 04:15:23.280318 139889825101568 tf_logging.py:115] Running local_init_op.
+I0123 04:15:26.316115 139889825101568 tf_logging.py:115] Done running local_init_op.
+Running warm up
+Done warm up
+Step	Img/sec	total_loss
+1	images/sec: 849.0 +/- 0.0 (jitter = 0.0)	7.415
+10	images/sec: 898.7 +/- 11.0 (jitter = 23.9)	7.399
+20	images/sec: 971.4 +/- 33.2 (jitter = 49.7)	7.398
+30	images/sec: 1058.0 +/- 33.9 (jitter = 162.5)	7.378
+40	images/sec: 1103.3 +/- 28.2 (jitter = 52.4)	7.381
+50	images/sec: 1134.9 +/- 24.1 (jitter = 33.9)	7.383
+60	images/sec: 1156.6 +/- 20.9 (jitter = 29.8)	7.395
+70	images/sec: 1172.4 +/- 18.3 (jitter = 23.6)	7.418
+80	images/sec: 1184.4 +/- 16.3 (jitter = 20.0)	7.407
+90	images/sec: 1193.1 +/- 14.7 (jitter = 19.8)	7.388
+100	images/sec: 1200.1 +/- 13.3 (jitter = 19.8)	7.376
+----------------------------------------------------------------
+total images/sec: 1199.67
+----------------------------------------------------------------
